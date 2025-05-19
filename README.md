@@ -1,8 +1,3 @@
-Here's your complete `README.md` file in a **clean, professional format**, based on your project structure, deployment process, and submission requirements:
-
----
-
-```markdown
 # 🌐 Cloud Portfolio Deployment using Terraform and Google Cloud
 
 This repository contains the source code and Terraform configurations to deploy a personal static portfolio website on **Google Cloud Storage (GCS)** using **Infrastructure as Code** principles.
@@ -33,15 +28,15 @@ portfolio-terraform/
 ├── .gitignore
 └── README.md
 
-````
+```
 
 ---
 
 ## 🚀 Live Website
 
-🌍 [Click here to view the deployed website](https://storage.googleapis.com/YOUR_BUCKET_NAME/index.html)
+🌍 [Click here to view the deployed website](https://storage.googleapis.com/shashi-portfolio-2025/index.html)
 
-> Replace `YOUR_BUCKET_NAME` with the actual name of your deployed GCS bucket.
+> Replace `shashi-portfolio-2025` with the actual name of your deployed GCS bucket.
 
 ---
 
@@ -59,10 +54,10 @@ portfolio-terraform/
 
 ### 2. Clone the Repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/terraform-gcp-portfolio.git
+```
+git clone https://github.com/Shashipreethamgajji/terraform-gcp-portfolio.git
 cd terraform-gcp-portfolio
-````
+```
 
 ---
 
@@ -75,7 +70,7 @@ Place your downloaded GCP service account key in the `terraform/` folder and nam
 
 ### 4. Terraform Setup
 
-```bash
+```
 cd terraform
 terraform init
 terraform plan
@@ -88,8 +83,8 @@ terraform apply
 
 ### 5. Upload Website Files to GCS
 
-```bash
-gsutil cp -r ../website/* gs://YOUR_BUCKET_NAME
+```
+gsutil cp -r ../website/* gs://shashi-portfolio-2025
 ```
 
 ---
@@ -149,8 +144,10 @@ This project is open source and available under the [MIT License](LICENSE).
 2. Place it in your root `portfolio-terraform/` directory.
 3. Run:
 
-```bash
+```
 git add README.md
 git commit -m "Added complete README with project structure and instructions"
 git push origin main
 ````
+
+Let me know if you'd like me to create dummy screenshots or review your final repo before submission.
