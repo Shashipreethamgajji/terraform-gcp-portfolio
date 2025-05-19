@@ -54,8 +54,8 @@ portfolio-terraform/
 
 ### 2. Clone the Repository
 
-```
-git clone https://github.com/Shashipreethamgajji/terraform-gcp-portfolio.git
+```bash
+git clone https://github.com/shashi-portfolio-2025/terraform-gcp-portfolio.git
 cd terraform-gcp-portfolio
 ```
 
@@ -70,7 +70,7 @@ Place your downloaded GCP service account key in the `terraform/` folder and nam
 
 ### 4. Terraform Setup
 
-```
+```bash
 cd terraform
 terraform init
 terraform plan
@@ -83,7 +83,7 @@ terraform apply
 
 ### 5. Upload Website Files to GCS
 
-```
+```bash
 gsutil cp -r ../website/* gs://shashi-portfolio-2025
 ```
 
@@ -144,7 +144,7 @@ This project is open source and available under the [MIT License](LICENSE).
 2. Place it in your root `portfolio-terraform/` directory.
 3. Run:
 
-```
+```bash
 git add README.md
 git commit -m "Added complete README with project structure and instructions"
 git push origin main
