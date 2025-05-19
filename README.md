@@ -57,28 +57,31 @@ Edit ```
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/terraform-gcp-portfolio.git
+git clone https://github.com/Shashipreethamgajji/terraform-gcp-portfolio.git
 cd terraform-gcp-portfolio
 
 ---
 
 ### 3. Google Cloud Authentication
+
 Place your downloaded GCP service account key in the terraform/ folder and name it terraform-key.json.
 Important: This file is excluded from Git using .gitignore.
 
 ---
 
 ### 4. Terraform Setup
-bash ```
-Copy ```
-Edit ```
+
+bash
+Copy
+Edit
 cd terraform
 terraform init
 terraform plan
 terraform apply
 Type yes when prompted to proceed with infrastructure creation.
 
-5. Upload Website Files to GCS
+### 5. Upload Website Files to GCS
+
 bash
 Copy
 Edit
