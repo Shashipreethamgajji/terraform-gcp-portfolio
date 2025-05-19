@@ -149,5 +149,3 @@ git add README.md
 git commit -m "Added complete README with project structure and instructions"
 git push origin main
 ````
-
-Let me know if you'd like me to create dummy screenshots or review your final repo before submission.
