@@ -1,6 +1,6 @@
-# 🌐 Terraform GCP Portfolio Deployment
+# 🌐 Cloud Portfolio Deployment using Terraform and Google Cloud
 
-This project showcases how to deploy a personal portfolio website using **Terraform** on **Google Cloud Platform (GCP)** with **Google Cloud Storage (GCS)** for static hosting. The portfolio is written in HTML, CSS, and JavaScript.
+This repository contains the source code and Terraform configurations to deploy a personal static portfolio website on **Google Cloud Storage (GCS)** using **Infrastructure as Code** principles.
 
 ---
 
@@ -32,102 +32,97 @@ Edit
 
 ---
 
-## 🚀 How to Use
+## 🚀 Live Website
 
-### 1. Clone the Repo
+🌍 [Click here to view the deployed website](https://storage.googleapis.com/YOUR_BUCKET_NAME/index.html)
+
+> Replace `YOUR_BUCKET_NAME` with the actual name of your deployed GCS bucket.
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Prerequisites
+
+- ✅ Google Cloud Project
+- ✅ Billing enabled
+- ✅ Google Cloud SDK installed
+- ✅ Terraform installed
+- ✅ GitHub account
+
+---
+
+### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/Shashipreethamgajji/terraform-gcp-portfolio.git
+git clone https://github.com/YOUR_USERNAME/terraform-gcp-portfolio.git
 cd terraform-gcp-portfolio
-2. Authenticate with GCP
-Make sure you have the GCP service account key stored as terraform-key.json inside the terraform/ folder.
+3. Google Cloud Authentication
+Place your downloaded GCP service account key in the terraform/ folder and name it terraform-key.json.
+Important: This file is excluded from Git using .gitignore.
 
-3. Deploy Using Terraform
+4. Terraform Setup
 bash
 Copy
 Edit
 cd terraform
 terraform init
+terraform plan
 terraform apply
-You will be prompted to enter a bucket name. Use something globally unique (e.g., shashi-portfolio-2025).
+Type yes when prompted to proceed with infrastructure creation.
 
-🖼️ Screenshots
-These screenshots demonstrate key steps and outcomes:
+5. Upload Website Files to GCS
+bash
+Copy
+Edit
+gsutil cp -r ../website/* gs://YOUR_BUCKET_NAME
+📸 Screenshots
+Include the following screenshots inside the screenshots/ folder:
 
 Screenshot	Description
-terraform_apply.png	Output of terraform apply command
-gcp_bucket.png	GCS bucket created on GCP console
-deployed_site.png	Live website opened via bucket URL
-github_repo.png	GitHub repository after pushing code
+terraform_apply.png	Terraform successful apply output
+gcp_bucket.png	GCS bucket created on GCP Console
+deployed_site.png	Your live portfolio opened in browser
+github_repo.png	GitHub repository showing all files
 
-All screenshots are stored in the screenshots/ folder for submission and review.
+📄 .gitignore
+Make sure your .gitignore includes:
 
-🌍 Live Demo
-🔗 https://storage.googleapis.com/YOUR_BUCKET_NAME/index.html
-
-Replace YOUR_BUCKET_NAME with your actual bucket name (e.g., shashi-portfolio-2025).
-
-📦 GitHub Setup Steps
-Initialize Git:
-
-bash
-Copy
-Edit
-git init
-git remote add origin https://github.com/Shashipreethamgajji/terraform-gcp-portfolio.git
-Push Code:
-
-bash
-Copy
-Edit
-git add .
-git commit -m "Initial commit"
-git push -u origin main
-🔒 .gitignore
-Ensure you have this .gitignore in place:
-
-bash
+gitignore
 Copy
 Edit
 terraform/terraform-key.json
 *.tfstate
 .terraform/
-📄 License
-This project is licensed under the MIT License.
+🛠 Technologies Used
+Google Cloud Platform (GCS)
 
-📬 Contact
-For feedback or questions:
+Terraform
+
+HTML, CSS, JavaScript
+
+Git & GitHub
+
+📫 Contact
 📧 shashipreethamgajji@gmail.com
-🔗 LinkedIn Profile
+🔗 LinkedIn
 
-markdown
+📝 License
+This project is open source and available under the MIT License.
+
+yaml
 Copy
 Edit
 
 ---
 
-### 📸 How to Take and Upload Screenshots
+### ✅ Final Steps
 
-Take **clear screenshots** of:
+1. Save this content into a file named exactly `README.md` (not `.txt`).
+2. Place it in your root `portfolio-terraform/` directory.
+3. Run:
 
-1. ✅ `terraform apply` terminal output
-2. ✅ GCP bucket overview in the Console
-3. ✅ Your website opened via HTTPS bucket link
-4. ✅ GitHub repo after pushing
-
-**Save them as:**
-
-- `terraform_apply.png`
-- `gcp_bucket.png`
-- `deployed_site.png`
-- `github_repo.png`
-
-Then:
-
-1. Place all `.png` files into a new `screenshots/` folder in the root of your project.
-2. Run the following:
-
-   ```bash
-   git add screenshots/
-   git commit -m "Add screenshots for documentation"
-   git push
+```bash
+git add README.md
+git commit -m "Added complete README with project structure and instructions"
+git push origin main
