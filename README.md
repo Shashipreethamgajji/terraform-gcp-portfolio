@@ -6,6 +6,7 @@ This repository contains the source code and Terraform configurations to deploy 
 
 ## 📁 Project Structure
 
+```
 portfolio-terraform/
 ├── website/ # Your HTML, CSS, JS website files
 │ ├── css/
@@ -25,10 +26,11 @@ portfolio-terraform/
 │ └── github_repo.png
 ├── .gitignore
 └── README.md
+```
 
-yaml
-Copy
-Edit
+yaml ```
+Copy ```
+Edit ```
 
 ---
 
@@ -57,14 +59,19 @@ Edit
 ```bash
 git clone https://github.com/YOUR_USERNAME/terraform-gcp-portfolio.git
 cd terraform-gcp-portfolio
-3. Google Cloud Authentication
+
+---
+
+### 3. Google Cloud Authentication
 Place your downloaded GCP service account key in the terraform/ folder and name it terraform-key.json.
 Important: This file is excluded from Git using .gitignore.
 
-4. Terraform Setup
-bash
-Copy
-Edit
+---
+
+### 4. Terraform Setup
+bash ```
+Copy ```
+Edit ```
 cd terraform
 terraform init
 terraform plan
