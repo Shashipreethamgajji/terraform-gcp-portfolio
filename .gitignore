@@ -1,0 +1,5 @@
+# .gitignore
+terraform/terraform-key.json
+*.tfstate
+*.tfstate.backup
+.terraform/
